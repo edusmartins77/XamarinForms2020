@@ -20,6 +20,7 @@ namespace App2_TipoPaginaXF.TipoPagina.Navigation
         private void FecharModal(object sender, EventArgs args)
         {
             Navigation.PopModalAsync();
+
         }
     }
 }

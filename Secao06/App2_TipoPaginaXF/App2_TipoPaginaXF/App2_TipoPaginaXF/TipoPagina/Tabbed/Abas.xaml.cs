@@ -7,19 +7,16 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App2_TipoPaginaXF.TipoPagina.Navigation
+namespace App2_TipoPaginaXF.TipoPagina.Tabbed
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Modal : ContentPage
+    public partial class Abas : TabbedPage
     {
-        public Modal()
+        public Abas()
         {
             InitializeComponent();
-        }
 
-        private void FecharModal(object sender, EventArgs args)
-        {
-            Navigation.PopModalAsync();
+            Children.Add(new NavigationPage(new TipoPagina.Navigation.Pagina1()) { Title = "Item 3"});
         }
     }
 }
